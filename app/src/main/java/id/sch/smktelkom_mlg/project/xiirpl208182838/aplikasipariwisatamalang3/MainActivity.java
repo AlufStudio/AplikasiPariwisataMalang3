@@ -1,6 +1,7 @@
 package id.sch.smktelkom_mlg.project.xiirpl208182838.aplikasipariwisatamalang3;
 
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
@@ -19,7 +20,8 @@ import java.util.ArrayList;
 import adapter.HotelAdapter;
 import model.Hotel;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements HotelAdapter.IHotelAdapter {
+    public static final String HOTEL = "hotel";
     ArrayList<Hotel> mList = new ArrayList<>();
     HotelAdapter mAdapter;
 
@@ -91,5 +93,33 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void doClick(int pos) {
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(HOTEL, mList.get(pos));
+        startActivity(intent);
+
+    }
+
+    @Override
+    public void doEdit(int pos) {
+
+    }
+
+    @Override
+    public void doDelete(int pos) {
+
+    }
+
+    @Override
+    public void doFav(int pos) {
+
+    }
+
+    @Override
+    public void doShare(int pos) {
+
     }
 }
