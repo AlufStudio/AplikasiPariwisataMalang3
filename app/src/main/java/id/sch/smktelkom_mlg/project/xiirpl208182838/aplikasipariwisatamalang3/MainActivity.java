@@ -13,6 +13,8 @@ import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.SimpleAdapter;
 
@@ -61,6 +63,13 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Button btn_share=(Button)findViewById(R.id.buttonShare);
+        btn_share.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                shareIt();
+            }
+        });
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -123,6 +132,14 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
         } finally {
             setList();
         }
+    }
+
+    private void shareIt() {
+        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+        sharingIntent.setType("text/plain");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "AndroidSolved");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Now Learn Android with AndroidSolved clicke here to visit https://androidsolved.wordpress.com/ ");
+        startActivity(Intent.createChooser(sharingIntent, "Share via"));
     }
 
     private void setList() {
@@ -265,9 +282,13 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
     }
 
     @Override
-    public void doShare(int pos) {
-
+    public void doShare(int pos)
+    {
+//        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+//        sharingIntent.setType("text/plain");
+//        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "AndroidSolved");
+//        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Now Learn Android with AndroidSolved clicke here to visit https://androidsolved.wordpress.com/ ");
+//        startActivity(Intent.createChooser(sharingIntent, "Share via"));
     }
-
 
 }
