@@ -17,10 +17,11 @@
         android:paddingTop="16dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
-            android:text="@string/large_text" />
+            android:layout_marginBottom="16dp"
+            android:text="Description"
+            android:textColor="?attr/colorAccent" />
 
         <TextView
             android:id="@+id/place_detail"
