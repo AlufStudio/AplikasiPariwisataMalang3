@@ -4,7 +4,9 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -13,6 +15,8 @@ import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.SimpleAdapter;
 
@@ -26,6 +30,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -46,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
     ArrayList<Integer> mListMapFilter = new ArrayList<>();
     String mQuery;
     HotelAdapter mAdapter;
-    private koneksi myJSON;
+//    private koneksi myJSON;
     private JSONObject jURL;
     private JSONArray jArray;
 
@@ -61,6 +66,19 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        View.OnClickListener handler = new View.OnClickListener() {
+            public void onClick(View v) {
+                switch (v.getId()) {
+
+                    case R.id.buttonShare:
+                        shareTextUrl();
+                        break;
+
+                }
+            }
+        };
+        findViewById(R.id.buttonShare).setOnClickListener(handler);
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -97,8 +115,8 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
 // Pemintaan koneksi dilaksakan
         Volley.newRequestQueue(this).add(stringRequest);
 
-        myJSON = new koneksi();
-        jURL = myJSON.getJSONFromUrl(url);
+//        myJSON = new koneksi();
+//        jURL = myJSON.getJSONFromUrl(url);
         tempat = new ArrayList<HashMap<String, String>>();
         try {
             jArray = jURL.getJSONArray(TAG_TEMPAT);
@@ -125,11 +143,26 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
         }
     }
 
+    private void shareTextUrl() {
+        Intent share = new Intent(android.content.Intent.ACTION_SEND);
+        share.setType("text/plain");
+        share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+
+        share.putExtra(Intent.EXTRA_SUBJECT, "Title Of The Post");
+        share.putExtra(Intent.EXTRA_TEXT, "http://");
+        startActivity(Intent.createChooser(share, "Share link!"));
+    }
+
+
     private void setList() {
         adapter = new SimpleAdapter(this, tempat, R.layout.activity_main,
                 new String[]{TAG_ID, TAG_TEMPAT2, TAG_DESKRIPSI, TAG_LOKASI}, new int[]{
                 R.id.fab});
         setList(adapter);
+    }
+
+    private void setList(ListAdapter adapter) {
+
     }
 
 
