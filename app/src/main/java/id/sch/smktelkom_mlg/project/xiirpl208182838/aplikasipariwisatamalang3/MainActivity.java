@@ -14,16 +14,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListAdapter;
-import android.widget.SimpleAdapter;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -46,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
     ArrayList<Integer> mListMapFilter = new ArrayList<>();
     String mQuery;
     HotelAdapter mAdapter;
-    private koneksi myJSON;
+    //private koneksi myJSON;
     private JSONObject jURL;
     private JSONArray jArray;
 
@@ -95,42 +92,42 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
         });
 
 // Pemintaan koneksi dilaksakan
-        Volley.newRequestQueue(this).add(stringRequest);
-
-        myJSON = new koneksi();
-        jURL = myJSON.getJSONFromUrl(url);
-        tempat = new ArrayList<HashMap<String, String>>();
-        try {
-            jArray = jURL.getJSONArray(TAG_TEMPAT);
-            for (int i = 0; i < jArray.length(); i++) {
-                JSONObject job = jArray.getJSONObject(i);
-                String id = job.getString("id_tempat");
-                String tempat2 = job.getString("tempat");
-                String deskripsi = job.getString("deskrisi");
-                String lokasi = job.getString("lokasi");
-
-                hash = new HashMap<String, String>();
-                hash.put(TAG_ID, id);
-                hash.put(TAG_TEMPAT2, tempat2);
-                hash.put(TAG_DESKRIPSI, deskripsi);
-                hash.put(TAG_LOKASI, lokasi);
-
-
-                tempat.add(hash);
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } finally {
-            setList();
-        }
+//        Volley.newRequestQueue(this).add(stringRequest);
+//
+//        myJSON = new koneksi();
+//        jURL = myJSON.getJSONFromUrl(url);
+//        tempat = new ArrayList<HashMap<String, String>>();
+//        try {
+//            jArray = jURL.getJSONArray(TAG_TEMPAT);
+//            for (int i = 0; i < jArray.length(); i++) {
+//                JSONObject job = jArray.getJSONObject(i);
+//                String id = job.getString("id_tempat");
+//                String tempat2 = job.getString("tempat");
+//                String deskripsi = job.getString("deskrisi");
+//                String lokasi = job.getString("lokasi");
+//
+//                hash = new HashMap<String, String>();
+//                hash.put(TAG_ID, id);
+//                hash.put(TAG_TEMPAT2, tempat2);
+//                hash.put(TAG_DESKRIPSI, deskripsi);
+//                hash.put(TAG_LOKASI, lokasi);
+//
+//
+//                tempat.add(hash);
+//            }
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        } finally {
+//            setList();
+//        }
     }
-
-    private void setList() {
-        adapter = new SimpleAdapter(this, tempat, R.layout.activity_main,
-                new String[]{TAG_ID, TAG_TEMPAT2, TAG_DESKRIPSI, TAG_LOKASI}, new int[]{
-                R.id.fab});
-        setList(adapter);
-    }
+//
+//    private void setList() {
+//        adapter = new SimpleAdapter(this, tempat, R.layout.activity_main,
+//                new String[]{TAG_ID, TAG_TEMPAT2, TAG_DESKRIPSI, TAG_LOKASI}, new int[]{
+//                R.id.fab});
+//        setList(adapter);
+//    }
 
 
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
