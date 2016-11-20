@@ -33,8 +33,9 @@
         <item>BENDUNGAN KARANGKATES</item>
         <item>AGROWISATA WONOSARI</item>
         <item>SENGKALING</item>
-        <item>OMAH KAYU</item>
+
         <item>WISATA KULINER DAN EDUKASI MUSEUM RESTO</item>
+        <item>OMAH KAYU</item>
         <!--<item>Palais Garnie</item>-->
         <!--<item>Piazza del Duomo</item>-->
         <!--<item>Manhattan</item>-->
@@ -94,6 +95,7 @@
         <item>Taman rekreasi ini berupa telaga buatan yang terletak di tepi Sungai Brantas. Dilokasi ini anda dapat bersepeda air di telaga buatan seluas 2 hektare.</item>
         <item>Di tempat ini anda bisa makan, kemudian belajar dengan meliha-lihat koleksi yang ada di Museum unik ini. Inggil Museum Resti ini memang museum yang didalamnya juga menyediakan Restoran.</item>
         <item>Terkadang kita butuh kesejukan. Omah Kayu adalah penginapan yang ada di perbukitan, untuk menginap disini kita hanya perlu mengeluarkan uang permalamnya sekitar Rp 250.000,00 sampai Rp 300.000,00</item>
+
         <!--eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis-->
         <!--nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute-->
         <!--irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla-->
@@ -182,17 +184,21 @@
         <item>@drawable/sem</item>
         <item>@drawable/balekambang</item>
         <item>@drawable/karangkates</item>
-        <item>@drawable/selecta</item>
         <item>@drawable/wonosari</item>
         <item>@drawable/sengkaling</item>
         <item>@drawable/apung</item>
         <item>@drawable/omahkayu</item>
+
+
         <!--<item>@drawable/a</item>-->
         <!--<item>@drawable/b</item>-->
         <!--<item>@drawable/c</item>-->
         <!--<item>@drawable/d</item>-->
         <!--<item>@drawable/e</item>-->
         <!--<item>@drawable/f</item>-->
+    </array>
+    <array name="places_picture2">
+        <item>@drawable/bromo2</item>
     </array>
 </resources>
 

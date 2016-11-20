@@ -20,8 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Description"
-            android:textColor="?attr/colorAccent" />
+            android:text="Penjelasan"
+            android:textColor="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/tvDeskripsi"
@@ -34,13 +34,27 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="Location"
-            android:textColor="?attr/colorAccent" />
+            android:text="Lokasi"
+            android:textColor="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/tvLokasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="Lokasi" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/bromo2" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            tools:background="#424242" />
+
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

@@ -90,7 +90,7 @@ public class InputActivity extends AppCompatActivity {
         Intent i = new Intent(Intent.ACTION_SEND);
         i.setType("text/plain");
         i.putExtra(Intent.EXTRA_SUBJECT, "My Status");
-        i.putExtra(Intent.EXTRA_TEXT, pmessage + " untuk " + status2);
+        i.putExtra(Intent.EXTRA_TEXT, pmessage + " untuk " + status2 + "\n\n" + "mau tau tentang tempat pariwisata yang ada di Malang? download aplikasi explore malang segera");
         startActivity(Intent.createChooser(i, "My Status"));
 
 //        String judul = etJudul.getText().toString();
