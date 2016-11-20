@@ -181,14 +181,10 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-       //daffa
-        // Inflate the menu; this adds items to the action bar if it is present.
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.my_option_menu, menu);
-        //getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
 
-        //daffa.
+        // Inflate the menu; this adds items to the action bar if it is present.
+
+
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
@@ -206,7 +202,12 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
                 return true;
             }
         });
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.my_option_menu, menu);
+        //getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+
+
     }
 
     private void doFilter(String mQuery) {
