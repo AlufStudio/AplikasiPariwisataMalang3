@@ -63,14 +63,14 @@ public class InputActivity extends AppCompatActivity {
             setTitle("Kritik dan Saran");
         }
 
-        findViewById(R.id.buttonShare).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String status = etDeskripsi.getText().toString();
-                String status2 = etJudul.getText().toString();
-                doSave(status, status2);
-            }
-        });
+//        findViewById(R.id.buttonShare).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String status = etDeskripsi.getText().toString();
+//                String status2 = etJudul.getText().toString();
+//                doSave(status, status2);
+//            }
+//        });
     }
 
     private void fillData() {
