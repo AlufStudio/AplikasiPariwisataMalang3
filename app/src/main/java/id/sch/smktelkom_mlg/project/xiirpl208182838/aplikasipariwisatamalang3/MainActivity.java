@@ -64,12 +64,7 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button btn_share=(Button)findViewById(R.id.buttonShare);
-        btn_share.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                shareIt();
-            }
-        });
+
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -134,13 +129,6 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
         }
     }
 
-    private void shareIt() {
-        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-        sharingIntent.setType("text/plain");
-        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "AndroidSolved");
-        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Now Learn Android with AndroidSolved clicke here to visit https://androidsolved.wordpress.com/ ");
-        startActivity(Intent.createChooser(sharingIntent, "Share via"));
-    }
 
     private void setList() {
         adapter = new SimpleAdapter(this, tempat, R.layout.activity_main,
@@ -161,6 +149,11 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
     private void goAdd() {
         startActivityForResult(new Intent(this, InputActivity.class), REQUEST_CODE_ADD);
     }
+
+//    private void goShare()
+//    {
+//        startActivityForResult(new Intent(this, DetailActivity.class), );
+//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

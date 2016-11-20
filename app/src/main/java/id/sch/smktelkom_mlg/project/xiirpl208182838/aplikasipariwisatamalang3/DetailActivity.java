@@ -1,10 +1,12 @@
 package id.sch.smktelkom_mlg.project.xiirpl208182838.aplikasipariwisatamalang3;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +20,13 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Button button =(Button)findViewById(R.id.buttonShare);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                shareIt();
+            }
+        });
 
         Hotel hotel = (Hotel) getIntent().getSerializableExtra(MainActivity.HOTEL);
         setTitle(hotel.judul);
@@ -45,4 +54,13 @@ public class DetailActivity extends AppCompatActivity {
 //            }
 //        });
     }
-}
+
+    private void shareIt() {
+            Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "AndroidSolved");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Now Learn Android with AndroidSolved clicke here to visit https://androidsolved.wordpress.com/ ");
+            startActivity(Intent.createChooser(sharingIntent, "Share via"));
+        }
+
+    }
