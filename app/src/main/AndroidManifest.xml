@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="id.sch.smktelkom_mlg.project.xiirpl208182838.aplikasipariwisatamalang3">
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:android="http://schemas.android.com/apk/res/android" package="id.sch.smktelkom_mlg.project.xiirpl208182838.aplikasipariwisatamalang3">
 
 <uses-permission android:name="android.permission.INTERNET" />
 
@@ -18,4 +17,11 @@
     <activity android:name=".InputActivity"></activity>
 </application>
 
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+<application>
+    <activity android:name="id.sch.smktelkom_mlg.project.xiirpl208182838.aplikasipariwisatamalang3.ShareActivity"></activity>
+</application>
 </manifest>
+    </manifest>

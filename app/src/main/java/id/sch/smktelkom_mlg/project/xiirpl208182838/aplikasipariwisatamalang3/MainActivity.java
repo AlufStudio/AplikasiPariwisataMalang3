@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,7 +13,6 @@ import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ListAdapter;
 
 import com.android.volley.Request;
@@ -69,7 +67,6 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
 
         fillData();
 
-
         //ganti localhost (http://localhost:XXXX/hallodunia.php menjadi) ip address yang diperoleh dari ipconfig cmd
         String url = "http://192.168.160.1//contoh.php";
 
@@ -123,8 +120,7 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
 //        } finally {
 //            setList();
 //        }
-
-
+    }
 //
 //    private void setList() {
 //        adapter = new SimpleAdapter(this, tempat, R.layout.activity_main,
@@ -134,16 +130,13 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
 //    }
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 goAdd();
             }
-        });
-    }
-
-
+        });*/
 
     private void goAdd() {
         startActivityForResult(new Intent(this, InputActivity.class), REQUEST_CODE_ADD);
