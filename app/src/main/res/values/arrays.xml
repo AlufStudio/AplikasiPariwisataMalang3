@@ -35,7 +35,6 @@
         <item>SENGKALING</item>
         <item>OMAH KAYU</item>
         <item>WISATA KULINER DAN EDUKASI MUSEUM RESTO</item>
-        <item></item>
         <!--<item>Palais Garnie</item>-->
         <!--<item>Piazza del Duomo</item>-->
         <!--<item>Manhattan</item>-->
@@ -46,14 +45,25 @@
     <string-array name="place_desc">
         <item>gunung di indonesia</item>
         <item>bunga bunga</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>gunung di indonesia</item>
+        <item>bunga bunga</item>
+        <item>gunung di indonesia</item>
+        <item>bunga bunga</item>
+        <item>gunung di indonesia</item>
+        <item>bunga bunga</item>
+        <item>gunung di indonesia</item>
+        <item>bunga bunga</item>
+        <item>gunung di indonesia</item>
+        <item>bunga bunga</item>
+        <item>gunung di indonesia</item>
+        <item>bunga bunga</item>
+        <item>gunung di indonesia</item>
+        <item>bunga bunga</item>
+        <item>gunung di indonesia</item>
+        <item>bunga bunga</item>
+        <item>gunung di indonesia</item>
+        <item>bunga bunga</item>
+
         <!--<item>The Palais Garnier which locates in Paris was built from 1861 for-->
         <!--the Paris Opera.-->
         <!--</item>-->
@@ -65,8 +75,25 @@
     </string-array>
     <string-array name="place_details">
         <item>gunung gunung gunung gunung gunung</item>
-        <item>bunga bunga bunga bunga</item>
-        <!--<item>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do-->
+        <item>Lokasi ini selalu ramai dikunjungi oleh wisatawan dari berbagai daerah. Lokasinya sejuk, ada kolam renang yang dingin, rekomendasi untuk anda kunjungi di hari libur</item>
+        <item>blablabla</item>
+        <item>Nah tempat wisata satu ini bernuansa kan wisata malam hari , dikarenakan open gate dari wisata Batu Night Spektakuler ini dibuka mulai jam 3 sore , sampai jam 12 malam , dengan bernuansa kan tema malam hari dan carnival BNS mampu menarik hati pengunjung dengan lampion - lampion yang indah pada saat malam hari tidak hanya bermain wahana para pengunjung juga dapat berfoto di dekorasi yang telah disediakan di Wisata Batu Night Spektakuler</item><!--<item>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do-->
+        <item>Wisata ini cocok untuk para pengungjung yang bersama keluarganya dikarenakan tempatnya yang bernuansa nyaman , unik , dan berlingkungan aman polusi . selain kita dapat bermain di wahana - wahana yang disediakan oleh Wisata Mendit kita dapat berfoto dan bermain dengan para monyet dikarenakan di wisata Mendit ini para monyet dibebaskan atau bisa dikatakan tidak di dalam kandang</item>
+        <item>Tempat wisata ini barusan di renovasi</item>
+        <item>Wisata yang wajib dikunjungi di kota Malang adalah Jatim Park 1. ada 36 wahana permainan yang anda dapat coba. Salah satu yang populer adalah kolam renang raksasa dengan latar belakang patung Ken Dedes, Ken Arok, dan Mpu Gading</item>
+        <item>Setelah sukses dengan Jatim Park 1, maka dilaunchinglah Jatim Park 2. Jatim Park 2 lebih menonjol dari segi edukasinya. Ada Zona Secret Zoo (kebun binatang), Zona Museum Satwa serta Pohon inn Hotel (rumah pohon)</item>
+        <item>Kota Malang terkenal dengan buah apel yang sudah mendunia. Sayang sekali rasanya kalau sudah ke Malang tapi tidak mencoba sensasi memetik buah apel sendiri langsung dari pohonnya</item>
+        <item>Saat liburan di Malang jangan lupa untuk mampir ke Masjid Tiban yang memiliki desain spektakuler. Masjib megah ini terdiri dari 9 lantai, lengkap dengan toko souvenir, toko makanan ringan dan area satwa. Konon masjid ini dibangun oleh tentara jin dalam satu malam. Anda dapat masuk ke masjid ini tanpa dikenakan biaya apapun.</item>
+        <item>Salah satu tempat wisata alam paling populer di Malang adalah Coban Rondo. Tempat wisata ini cocok untuk keluarga dan teman-teman. </item>
+        <item>Eco Green Park ada di Jatim Park 2, wahana wisata sekaligus edukasi ini sangat cocok untuk dikunjungi pelajar, ada banyak pertunjukan menakjubkan seperti Bird Show, Rangkong dan Eagle Show dan Fire Dance yang menjadi favorit disini</item>
+        <item>Museum Angkut menjadi destinasi wisata populer di Malang yang selanjutnya. Museum ini merupakan tempat mobil antik bermarkas. Penataan museum paling menarik di Malang ini terbagi atas 10 zona wilayah</item>
+        <item>Pulau Sempu merupakan surga tersembunyi di Kota Malang. Anda dapat menyeberang dengan menggunakan kapal motor dari pantai Sendang Biru. Banyak traveler yang datang kesana untuk melihat pesona Pulau Sempu yang banyak dibicarakan tersebut.</item>
+        <item>Banyak yang bilang kalau Pantai Balekambang kalau mirip seperti Tanah Lot nya Jawa Timur. Pantainya sangat indah, pasirnya putih dan deburan ombaknya sempurna untuk peselancar</item>
+        <item>Bendungan Karangkates menjadi salah satu tempat berkumpul yang seru. Wisata ini sangat cocok untuk keluarga dan teman-teman</item>
+        <item>Anda ingin menikmati pemandangan kebun teh yang luas? Agrowisata Wonosari tempatnya. Jika ingin berlibur dan menginap di kebun teh ini, pihak pengelola menyediakan penginapan dengan taman bermain dan ATV</item>
+        <item>Taman rekreasi ini berupa telaga buatan yang terletak di tepi Sungai Brantas. Dilokasi ini anda dapat bersepeda air di telaga buatan seluas 2 hektare.</item>
+        <item>Di tempat ini anda bisa makan, kemudian belajar dengan meliha-lihat koleksi yang ada di Museum unik ini. Inggil Museum Resti ini memang museum yang didalamnya juga menyediakan Restoran.</item>
+        <item>Terkadang kita butuh kesejukan. Omah Kayu adalah penginapan yang ada di perbukitan, untuk menginap disini kita hanya perlu mengeluarkan uang permalamnya sekitar Rp 250.000,00 sampai Rp 300.000,00</item>
         <!--eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis-->
         <!--nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute-->
         <!--irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla-->
@@ -110,8 +137,27 @@
         <!--</item>-->
     </string-array>
     <string-array name="place_locations">
-        <item>di malang</item>
-        <item>di malang</item>
+        <item>Malang</item>
+        <item>Malang</item>
+        <item>Desa Garahrejo</item>
+        <item>Batu, Malang</item>
+        <item>Kecamatan Pakis</item>
+        <item>Alun Alun Malang</item>
+        <item>Daerah Batu (sekitar 20 kilometer dari Malang)</item>
+        <item>kota Batu</item>
+        <item>sekitar Batu</item>
+        <item>Daerah Turen</item>
+        <item>Desa Pandansari, Kecamatan Pujon</item>
+        <item>Daerah Batu</item>
+        <item>Di kota Batu</item>
+        <item>Sekitar 75 kilometer dari Kota Malang</item>
+        <item>Sekitar 57 kilometer dari Kota Malang</item>
+        <item>Daerah Sumberpucung</item>
+        <item>Di kota Batu</item>
+        <item>Daerah Wonosari</item>
+        <item>Desa Sengkaling, Kecamatan Dau</item>
+        <item>Di Malang Kota</item>
+        <item>Di sekitar Batu</item>
         <!--<item>8 Rue Scribe, 75009 Paris, France</item>-->
         <!--<item>Piazza del Capitolo - 50122 Florence</item>-->
         <!--<item>New York City</item>-->
@@ -122,6 +168,25 @@
     <array name="places_picture">
         <item>@drawable/bromo</item>
         <item>@drawable/selecta</item>
+        <item>@drawable/bengkung</item>
+        <item>@drawable/bns</item>
+        <item>@drawable/wendit</item>
+        <item>@drawable/alun</item>
+        <item>@drawable/jatimpark1</item>
+        <item>@drawable/jatimpark2</item>
+        <item>@drawable/apel</item>
+        <item>@drawable/masjidtiban</item>
+        <item>@drawable/cobanrondo</item>
+        <item>@drawable/eco</item>
+        <item>@drawable/museumangkut</item>
+        <item>@drawable/sem</item>
+        <item>@drawable/balekambang</item>
+        <item>@drawable/karangkates</item>
+        <item>@drawable/selecta</item>
+        <item>@drawable/wonosari</item>
+        <item>@drawable/sengkaling</item>
+        <item>@drawable/apung</item>
+        <item>@drawable/omahkayu</item>
         <!--<item>@drawable/a</item>-->
         <!--<item>@drawable/b</item>-->
         <!--<item>@drawable/c</item>-->
