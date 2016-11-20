@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListAdapter;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -228,6 +229,15 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId()==R.id.about){
+            startActivity(new Intent(this, AboutActivity.class));
+
+        } else if (item.getItemId() == R.id.help) {
+            startActivity(new Intent(this, HelpActivity.class));
+        }
+
+        return true;
+
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.

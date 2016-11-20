@@ -23,6 +23,11 @@ xmlns:android="http://schemas.android.com/apk/res/android" package="id.sch.smkte
         android:label="Aplikasi Pariwisata Malang">
     </activity>
 
+    <activity
+        android:name=".AboutActivity"
+        android:label="Aplikasi Pariwisata Malang">
+    </activity>
+
 </application>
 
     </manifest>
