@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import id.sch.smktelkom_mlg.project.xiirpl208182838.aplikasipariwisatamalang3.R;
 import model.Hotel;
@@ -20,10 +20,10 @@ import model.Hotel;
  * Created by SMK Telkom SP Malang on 30/10/2016.
  */
 public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> {
-    ArrayList<Hotel> hotelList;
+    List<Hotel> hotelList;
     IHotelAdapter mIHotelAdapter;
 
-    public HotelAdapter(Context context, ArrayList<Hotel> hotelList) {
+    public HotelAdapter(Context context, List<Hotel> hotelList) {
         this.hotelList = hotelList;
         mIHotelAdapter = (IHotelAdapter) context;
     }
@@ -75,7 +75,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
             super(itemView);
             ivFoto = (ImageView) itemView.findViewById(R.id.imageView);
             tvJudul = (TextView) itemView.findViewById(R.id.textViewJudul);
-            tvDeskripsi = (TextView) itemView.findViewById(R.id.textViewDeskripsi);
+            //tvDeskripsi = (TextView) itemView.findViewById(R.id.textViewDeskripsi);
 //            bEdit = (Button) itemView.findViewById(R.id.buttonEdit);
 //            bDelete = (Button) itemView.findViewById(R.id.buttonDelete);
             //ibFav = (ImageButton) itemView.findViewById(R.id.buttonFavorite);

@@ -19,8 +19,6 @@
 //    static JSONObject jObj = null;
 //    static String json = "";
 //
-//    public koneksi() {}
-//
 //    public JSONObject getJSONFromUrl(String url) {
 //
 //        try {
