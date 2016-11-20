@@ -10,14 +10,42 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="id.sch.smktelkom_mlg.project.xiirpl208182838.aplikasipariwisatamalang3.HelpActivity">
 
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:gravity="bottom"-->
+        <!--tools:src="@drawable/download"-->
+        <!--android:layout_below="@+id/textView1"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginTop="86dp" />-->
+
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="#ff0004ff"
+
+        android:gravity="bottom"
+        android:id="@+id/textView1"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:text="  Aplikasi Pariwisata Malang ini dibuat
-                        untuk memudahkan wisatawan dalam mencari
-                        tempat-tempat wisata terpopuler di Malang
-                        dari berbagai jenis, mulai dari indoor sampai
-                        wisata outdoor. Aplikasi ini berbasis offline.
-                        Kami berharap semoga aplikasi ini memiliki
-                         manfaat bagi semua pengguna aplikasi ini." />
+                  untuk memudahkan wisatawan dalam mencari
+                  tempat-tempat wisata terpopuler di Malang
+                  dari berbagai jenis, mulai dari indoor sampai
+                  wisata outdoor. Aplikasi ini berbasis offline.
+                  Kami berharap semoga aplikasi ini memiliki
+                  manfaat bagi semua pengguna aplikasi ini."
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
 </RelativeLayout>
