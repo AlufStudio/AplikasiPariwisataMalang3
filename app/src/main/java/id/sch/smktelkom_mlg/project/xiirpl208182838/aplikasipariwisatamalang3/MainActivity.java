@@ -235,9 +235,10 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId()==R.id.about){
             startActivity(new Intent(this, AboutActivity.class));
-
+            Toast.makeText(MainActivity.this, "About is selected", Toast.LENGTH_LONG).show();
         } else if (item.getItemId() == R.id.help) {
             startActivity(new Intent(this, HelpActivity.class));
+            Toast.makeText(MainActivity.this, "Help is selected", Toast.LENGTH_LONG).show();
         }
 
         return true;
