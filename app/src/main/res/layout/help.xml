@@ -13,6 +13,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:text="  Aplikasi Pariwisata Malang ini dibuat
                         untuk memudahkan wisatawan dalam mencari
                         tempat-tempat wisata terpopuler di Malang
