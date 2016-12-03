@@ -17,12 +17,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListAdapter;
-import android.widget.Toast;
-
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -75,25 +69,25 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
         String url = "http://192.168.160.1//contoh.php";
 
 // mendefiniskan permintaan koneksi
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-
-                        // hasil permintaan
-                        System.out.println(response);
-
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-                // bila terjadi error
-                System.out.println("Something went wrong!");
-                error.printStackTrace();
-
-            }
-        });
+//        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+//                new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//
+//                        // hasil permintaan
+//                        System.out.println(response);
+//
+//                    }
+//                }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//
+//                // bila terjadi error
+//                System.out.println("Something went wrong!");
+//                error.printStackTrace();
+//
+//            }
+//        });
 
 // Pemintaan koneksi dilaksakan
 //        Volley.newRequestQueue(this).add(stringRequest);
@@ -181,10 +175,11 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
+        //daffa
         // Inflate the menu; this adds items to the action bar if it is present.
 
 
+        //daffa.
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
@@ -206,7 +201,6 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
         inflater.inflate(R.menu.my_option_menu, menu);
         //getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
-
 
     }
 
@@ -241,10 +235,10 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId()==R.id.about){
             startActivity(new Intent(this, AboutActivity.class));
-            Toast.makeText(MainActivity.this, "About is selected", Toast.LENGTH_LONG).show();
+
         } else if (item.getItemId() == R.id.help) {
             startActivity(new Intent(this, HelpActivity.class));
-            Toast.makeText(MainActivity.this, "Help is selected", Toast.LENGTH_LONG).show();
+
         }
 
         return true;
@@ -287,6 +281,7 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
 
     @Override
     public void doShare(int pos) {
+
 
     }
 

@@ -79,7 +79,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
 //            bEdit = (Button) itemView.findViewById(R.id.buttonEdit);
 //            bDelete = (Button) itemView.findViewById(R.id.buttonDelete);
             //ibFav = (ImageButton) itemView.findViewById(R.id.buttonFavorite);
-            ibShare = (ImageButton) itemView.findViewById(R.id.buttonShare);
+            // ibShare = (ImageButton) itemView.findViewById(R.id.buttonShare);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -105,12 +105,12 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
 //                    mIHotelAdapter.doFav(getAdapterPosition());
 //                }
 //            });
-            ibShare.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    mIHotelAdapter.doShare(getAdapterPosition());
-                }
-            });
+//            ibShare.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    mIHotelAdapter.doShare(getAdapterPosition());
+//                }
+//            });
         }
     }
 }

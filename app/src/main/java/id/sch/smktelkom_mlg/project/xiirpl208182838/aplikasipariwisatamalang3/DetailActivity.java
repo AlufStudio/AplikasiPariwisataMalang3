@@ -1,6 +1,5 @@
 package id.sch.smktelkom_mlg.project.xiirpl208182838.aplikasipariwisatamalang3;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,16 +7,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import model.Hotel;
 
 public class DetailActivity extends AppCompatActivity {
-
-    String googleMap = "com.google.android.apps.maps";
-    Uri gmnIntentUri;
-    Intent mapIntent;
-    String latitude,longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,25 +44,5 @@ public class DetailActivity extends AppCompatActivity {
 //                        .setAction("Action", null).show();
 //            }
 //        });
-
-        findViewById(R.id.tombolmaps).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                gmnIntentUri = Uri.parse("google.navigation:q=" + latitude+","+ longitude);
-
-                mapIntent = new Intent(Intent.ACTION_VIEW, gmnIntentUri);
-
-                mapIntent.setPackage(googleMap);
-
-                if (mapIntent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(mapIntent);
-                } else {
-                    Toast.makeText(DetailActivity.this, "Google Maps Belum Terinstall. Install Terlebih Dahulu.",
-                            Toast.LENGTH_LONG).show();
-                }
-            }
-        })
-        ;
     }
 }
