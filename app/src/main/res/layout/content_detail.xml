@@ -56,5 +56,12 @@
             android:alpha="0.3"
             tools:background="#424242" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tombolmaps"
+            android:text="Open Google Maps" />
+
+
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
