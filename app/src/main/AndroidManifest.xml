@@ -24,11 +24,11 @@ xmlns:android="http://schemas.android.com/apk/res/android" package="id.sch.smkte
             android:label="@string/title_activity_detail"
         android:theme="@style/AppTheme.NoActionBar" />
     <activity android:name=".InputActivity"></activity>
-        <activity
-        android:name=".HelpActivity"
-            android:label="Aplikasi Pariwisata Malang"
-            android:theme="@style/AppTheme.NoActionBar">
-    </activity>
+        <!--<activity-->
+        <!--android:name=".HelpActivity"-->
+        <!--android:label="Aplikasi Pariwisata Malang"-->
+        <!--android:theme="@style/AppTheme.NoActionBar">-->
+        <!--</activity>-->
     <activity
         android:name=".AboutActivity"
         android:label="Aplikasi Pariwisata Malang"

@@ -282,6 +282,7 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
     @Override
     public void doShare(int pos) {
 
+
     }
 
 

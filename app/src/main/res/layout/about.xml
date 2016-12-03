@@ -10,13 +10,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="id.sch.smktelkom_mlg.project.xiirpl208182838.aplikasipariwisatamalang3.AboutActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/imageviewlogo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" Aplikasi Pariwisata Malang ini dibuat untuk memudahkan
-                wisatawan dalam mencari tempat-tempat wisata terpopuler
-                di Malang dari berbagai jenis, mulai dari indoor sampai
-                wisata outdoor. Aplikasi ini berbasis offline.Kami berharap
-                semoga aplikasi ini memiliki manfaat bagi semua pengguna aplikasi ini.
-" />
+        tools:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageviewlogo"
+        android:text="  Aplikasi Pariwisata Malang ini dibuat
+                        untuk memudahkan wisatawan dalam mencari
+                        tempat-tempat wisata terpopuler di Malang
+                        dari berbagai jenis, mulai dari indoor sampai
+                        wisata outdoor. Aplikasi ini berbasis offline.
+                        Kami berharap semoga aplikasi ini memiliki
+                         manfaat bagi semua pengguna aplikasi ini." />
 </RelativeLayout>

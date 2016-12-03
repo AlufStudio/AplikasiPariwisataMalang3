@@ -33,7 +33,7 @@ public class InputActivity extends AppCompatActivity {
 
         etJudul = (EditText) findViewById(R.id.editTextNama);
         etDeskripsi = (EditText) findViewById(R.id.editTextDeskripsi);
-        btnShare = (Button) findViewById(R.id.buttonShare);
+        //btnShare = (Button) findViewById(R.id.buttonShare);
 
 //        etDetail = (EditText) findViewById(R.id.editTextDetail);
 //        etLokasi = (EditText) findViewById(R.id.editTextLokasi);
