@@ -21,37 +21,57 @@ https://drive.google.com/open?id=0B0jBj0UuL4pTNjQwZmtJLTByeUU
 #1.
 
 Nama         : Cinta Berliana
+
 Kelas        : XII RPL 2
+
 No. Urut     : 08
+
 NIS          : 4317/1215
+
 User Github  : cintaberliana
+
 Nama Sekolah : SMK Telkom Malang
 
 #2.
 
-Nama 		     : Hilga Damayanti 
+Nama 		     : Hilga Damayanti
+
 Kelas		     : XII RPL 2
+
 No. Urut     : 18 
+
 NIS          : 4355/1253.063
+
 User Github  : hilgadamayanti
+
 Nama Sekolah : SMK Telkom Malang
 
 
 #3.
 
 Nama 		     : M. Daffa Attarriq
+
 Kelas		     : XII RPL 2
+
 No. Urut     : 28 
+
 NIS          : 4384/1282.063
+
 User Github  : daffaattariq
+
 Nama Sekolah : SMK Telkom Malang
 
 #4.
 
 Nama 		     : Sudrajad Jati Laksono
+
 Kelas		     : XII RPL 2
+
 No. Urut     : 38 
+
 NIS          : 4449/1347.070
+
 User Github  : Sudrajad
+
 Nama Sekolah : SMK Telkom Malang
 
