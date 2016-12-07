@@ -1,8 +1,4 @@
 # AplikasiPariwisataMalang3
-Aplikasi Pariwisata Malang ini dibuat untuk memudahkan wisatawan dalam mencari tempat-tempat wisata terpopuler
-                di Malang dari berbagai jenis, mulai dari indoor sampai
-                wisata outdoor. Aplikasi ini berbasis offline.Kami berharap
-                semoga aplikasi ini memiliki manfaat bagi semua pengguna aplikasi ini.
 
 ![15145041_1468574376498617_866603756_o](https://cloud.githubusercontent.com/assets/22041608/20464652/d630a282-af7d-11e6-8197-4b9d6d8d81c3.png)
 ![15145190_1468573763165345_1470588819_o](https://cloud.githubusercontent.com/assets/22041608/20464651/d6010cfc-af7d-11e6-8010-ceee7272f625.png)
